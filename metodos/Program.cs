@@ -6,19 +6,59 @@ using System.Threading.Tasks;
 
 namespace metodos
 {
-    internal class Program
+    class Program
     {
+
+        private String cadena;
+        private String verMayusculas = "";
+        private String verMinusculas = "";
+        private int n;
+        private string[] Mayusculas;
+        private string[] Minusculas;
+        private string[] tempMy;
+        private string[] tempMn;
+
+
+        private String mayusculas()
+        {
+            for (int i = 0; i < n; i++)
+            {
+                if (char.IsUpper(cadena[i]))
+                {
+
+                }
+            }
+        }
+
         static void Main(string[] args)
         {
             var data = new Program();
-            data.metodoPrivado();
-
+            //data.metodoPrivado();
+            Console.WriteLine(data.metodoPrivado());
+            Console.ReadLine();
+            //data.metodoPublico();
         }
 
-        private void metodoPrivado()
+        /*
+        private string metodoPrivado()
         {
-            Console.WriteLine("Hola");
+            return $"Alex Joel {25}";
+        }
+        */
+
+        /*
+        private int metodoPrivado()
+        {
+            return Convert.ToInt16("562");
+        }
+        */
+
+        /*
+        public void metodoPublico()
+        {
+            Console.WriteLine("Alex");
             Console.ReadLine();
         }
+        */
     }
 }

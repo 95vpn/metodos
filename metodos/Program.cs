@@ -23,11 +23,21 @@ namespace metodos
         {
             for (int i = 0; i < n; i++)
             {
-                if (char.IsUpper(cadena[i]))
+                if (Char.IsUpper(cadena[i]))
                 {
-
+                    tempMy[i] = Convert.ToString(cadena[i]); 
                 }
             }
+
+            for (int i = 0; i < tempMy.Length; i++)
+            {
+                if (tempMy[i] != null)
+                {
+                    Mayusculas[i] = tempMy[i];
+                    verMayusculas = $"{verMayusculas},{Mayusculas[i]}"  ;
+                }
+            }
+            return verMayusculas;
         }
 
         static void Main(string[] args)

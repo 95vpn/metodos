@@ -18,6 +18,16 @@ namespace metodos
         private string[] tempMy;
         private string[] tempMn;
 
+        public Program(String cadena) 
+        {
+            this.cadena = cadena;
+            n = cadena.Length;
+            Mayusculas = new String[n];
+            Minusculas = new String[n];
+            tempMy = new String[n];
+            tempMn = new String[n];
+        }
+
 
         private String mayusculas()
         {
@@ -40,8 +50,30 @@ namespace metodos
             return verMayusculas;
         }
 
+        public String minusculas()
+        {
+            for (int i = 0; i < n; i++)
+            {
+                if (Char.IsLower(cadena[i]))
+                {
+                    tempMn[i] = Convert.ToString(cadena[i]);
+                }
+            }
+
+            for (int i = 0; i < tempMn.Length; i++)
+            {
+                if (tempMn[i] != null)
+                {
+                    Minusculas[i] = tempMn[i];
+                    verMinusculas = $"{verMinusculas},{Mayusculas[i]}";
+                }
+            }
+            return verMinusculas; 
+        }
+
         static void Main(string[] args)
         {
+            var cadena = Console.ReadLine();
             var data = new Program();
             //data.metodoPrivado();
             Console.WriteLine(data.metodoPrivado());

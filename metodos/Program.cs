@@ -75,8 +75,10 @@ namespace metodos
         {
             var cadena = Console.ReadLine();
             var data = new Program();
+            Console.WriteLine("Las letras Mayusculas son: " + data.mayusculas() + "\n\n" + 
+                "Las letras minusculas son : " + data.minusculas());
             //data.metodoPrivado();
-            Console.WriteLine(data.metodoPrivado());
+            //Console.WriteLine(data.metodoPrivado());
             Console.ReadLine();
             //data.metodoPublico();
         }

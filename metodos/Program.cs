@@ -8,7 +8,7 @@ namespace metodos
 {
     class Program
     {
-
+        /*
         private String cadena;
         private String verMayusculas = "";
         private String verMinusculas = "";
@@ -70,19 +70,45 @@ namespace metodos
             }
             return verMinusculas; 
         }
+        */
+
+        /*
+        public Program()
+        {
+
+        }
+
+        public Program(String name)
+        {
+
+        }
+
+        public Program(String name, int age)
+        {
+
+        }
+
+        public Program(int age, String name )
+        {
+
+        }
+
+        
 
         static void Main(string[] args)
         {
             var cadena = Console.ReadLine();
-            var data = new Program();
-            Console.WriteLine("Las letras Mayusculas son: " + data.mayusculas() + "\n\n" + 
-                "Las letras minusculas son : " + data.minusculas());
+            var data = new Program(52, "Alex" );
+            new Program("Alex", 52);
+            new Program("Alex");
+            //Console.WriteLine("Las letras Mayusculas son: " + data.mayusculas() + "\n\n" + 
+            // "Las letras minusculas son : " + data.minusculas());
             //data.metodoPrivado();
             //Console.WriteLine(data.metodoPrivado());
             Console.ReadLine();
             //data.metodoPublico();
         }
-
+        */
         /*
         private string metodoPrivado()
         {
@@ -104,5 +130,52 @@ namespace metodos
             Console.ReadLine();
         }
         */
+
+        /*
+        static void Main(string[] args) 
+        {
+            Object[] parametros = { "Alex", 25, true };
+            new Program().metodo(parametros);
+            Console.ReadLine();
+        }
+
+        private void metodo(object[] parametros)
+        {
+            var nommbre = parametros[0];
+            String nombre = (string)parametros[0];
+            int edad = (int)parametros[1];
+            bool valor = (bool)parametros[2];
+        }
+        */
+
+        /*
+        static void Main(string[] args)
+        {
+            Object[] parametros = { "Alex", 25, true };
+            new Program().metodo("Alex", 25, 'A');
+            Console.ReadLine();
+        }
+
+        private void metodo(params object[] parametros)
+        {
+            var nommbre = parametros[0];
+            String nombre = (string)parametros[0];
+            int edad = (int)parametros[1];
+            bool valor = (bool)parametros[2];
+        }
+        */
+
+        static void Main(string[] args)
+        {
+            int edad = 30;
+            new Program().metodo(edad); 
+            Console.ReadLine();
+        }
+
+        private void metodo(int valor)
+        {
+            valor = 48;
+            Console.WriteLine(valor);
+        }
     }
 }

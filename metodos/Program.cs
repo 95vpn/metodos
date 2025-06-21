@@ -165,17 +165,50 @@ namespace metodos
         }
         */
 
+        /*
         static void Main(string[] args)
         {
             int edad = 30;
-            new Program().metodo(edad); 
+            int data = 67;
+            new Program().metodo(data); 
             Console.ReadLine();
         }
 
-        private void metodo(int valor)
+        private void metodo(in int valor)
         {
-            valor = 48;
+            //valor = 48;
             Console.WriteLine(valor);
+        }
+        */
+        /*
+        static void Main(string[] args)
+        {
+            int edad = 30;
+            int data = 67;
+            new Program().metodo(ref data);
+            Console.WriteLine(data);
+            Console.ReadLine();
+        }
+
+        private void metodo(ref int valor)
+        {
+            valor = 48 + 47;
+            
+        }
+        */
+        static void Main(string[] args)
+        {
+            int edad = 30;
+            int data = 67;
+            new Program().metodo(out data);
+            Console.WriteLine(data);
+            Console.ReadLine();
+        }
+
+        private void metodo(out int valor)
+        {
+            valor = 48 + 47;
+
         }
     }
 }

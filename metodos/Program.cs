@@ -196,6 +196,7 @@ namespace metodos
             
         }
         */
+        /*
         static void Main(string[] args)
         {
             int edad = 30;
@@ -208,6 +209,27 @@ namespace metodos
         private void metodo(out int valor)
         {
             valor = 48 + 47;
+
+        }
+        */
+
+        static void Main(string[] args)
+        {
+            int data;
+            new Program().metodo(out data);
+            Console.WriteLine(data);
+            Console.ReadLine();
+        }
+
+        private void metodo(out int valor)
+        {
+            valor = 48 + 47;
+            funcion();
+
+            void funcion()
+            {
+                Console.WriteLine("Hola soy una funcion");
+            }
 
         }
     }

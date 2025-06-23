@@ -213,24 +213,49 @@ namespace metodos
         }
         */
 
+        /*
         static void Main(string[] args)
         {
-            int data;
-            new Program().metodo(out data);
-            Console.WriteLine(data);
+            //int data;
+            String nombre;
+            //new Program().metodo(out data);
+            mensaje();
+            Console.WriteLine(nombre);
+            void mensaje() => nombre = "Alex Joel";
             Console.ReadLine();
         }
 
         private void metodo(out int valor)
         {
-            valor = 48 + 47;
-            funcion();
+            valor = funcion();
 
-            void funcion()
+             int funcion() =>  50 + 20;
+                //Console.WriteLine("Hola soy una funcion");
+            
+
+        }
+        */
+
+        static void Main()
+        {
+            int[] array = { 1, 2, 2, 3, 6, 4, 4, 4, 9, 5, 6, 5, 9, 2 };
+            int[] list = new int[array.Length];
+
+            for (int i = 0; i < array.Length; i++)
             {
-                Console.WriteLine("Hola soy una funcion");
-            }
+                int count = 0;
+                for (int j = 0; j < array.Length; j++)
+                {
+                    if (array[i] == array[j])
+                    {
+                        count++;
+                        if (numero(array[i])
+                        {
 
+                        }
+                    }
+                }
+            }
         }
     }
 }

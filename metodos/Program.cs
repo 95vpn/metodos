@@ -249,12 +249,30 @@ namespace metodos
                     if (array[i] == array[j])
                     {
                         count++;
-                        if (numero(array[i])
+                        if (numero(array[i]))
                         {
-
+                            list[i] = array[i];
                         }
                     }
                 }
+
+                if (list[i] != 0)
+                {
+                    Console.WriteLine(list[i] + " se repite: " + count);
+                }
+
+            }
+
+            bool numero(int num)
+            {
+                for(int i = 0; i < list.Length; i++)
+                {
+                    if (list[i] == num)
+                    {
+                        return false;
+                    }
+                }
+                return true;
             }
         }
     }

@@ -236,6 +236,7 @@ namespace metodos
         }
         */
 
+        /*
         static void Main()
         {
             int[] array = { 1, 2, 2, 3, 6, 4, 4, 4, 9, 5, 6, 5, 9, 2 };
@@ -273,6 +274,35 @@ namespace metodos
                     }
                 }
                 return true;
+            }
+        
+        }
+        */
+
+        static void Main()
+        {
+            var data = new Conversor();
+            data.Conversor1();
+            //Conversor.velocidad = 3.0;
+            var data1 = new Conversor();
+            data1.Conversor2();
+            //Conversor.Conversor1();
+            //Conversor.Conversor2();
+        }
+
+        class Conversor
+        {
+            public double velocidad;
+
+            public void Conversor1()
+            {
+                velocidad += 20;
+                
+            }
+
+            public void Conversor2()
+            {
+                velocidad += 70;
             }
         }
     }

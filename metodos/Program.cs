@@ -308,6 +308,7 @@ namespace metodos
         }
         */
 
+        /*
         static void Main()
         {
             int opcion, repetir = 0;
@@ -353,5 +354,48 @@ namespace metodos
                 Console.WriteLine($"{velocidad} km/h = {velocidad * 1000 / 3600}  m/s");
             }
         }
+        */
+
+        /*
+        static void Main()
+        {
+            var data = new Program();
+            data.metodo("c#");
+        }
+
+        private void metodo(String curso, String nombre = "Joel",  int cantidad = 52)
+        {
+            Console.WriteLine(nombre);
+        }
+        */
+
+        /*
+        static void Main()
+        {
+            var data = new Program();
+            data.metodo(null, null);
+        }
+
+        private void metodo(String curso,  int? cantidad , String nombre = "Joel")
+        {
+            Console.WriteLine($"{curso} {cantidad}");
+        }
+        */
+
+        readonly int valor = 55;
+        const int VALOR = 52;
+        public Program()
+        {
+            valor = 10;
+        }
+        static void Main()
+        {
+            var data = new Program();
+            //data.valor = 56;
+            Console.WriteLine($"{data.valor}");
+        }
+
+        
+
     }
 }
